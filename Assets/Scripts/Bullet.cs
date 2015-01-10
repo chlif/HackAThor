@@ -15,11 +15,9 @@ public class Bullet : MonoBehaviour {
 	}
 
 	//Check for collision events
-	void onCollisionEnter(Collision collision){
-		print ("Colission");
-		if (collision.gameObject.name == "Zombie"){ 
-			print("To a zombie!");
-			Destroy(collision.gameObject);
+	void OnCollisionEnter2D(Collision2D collision){
+		if (collision.gameObject.name == "Zombie") {
+			Destroy( collision.gameObject );
 		}
 	}
 }
