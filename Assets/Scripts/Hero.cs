@@ -8,7 +8,7 @@ public class Hero : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		anim = GetComponent<Animator> ();
+
 	}
 	
 	// Update is called once per frame
@@ -16,7 +16,6 @@ public class Hero : MonoBehaviour {
 		float xVelocity = GetXVelocity ();
 
 		rigidbody2D.velocity = new Vector2 (xVelocity, rigidbody2D.velocity.y);
-		anim.SetFloat ("speed", xVelocity);
 
 		if (xVelocity > 0 && !facingRight) {
 			Flip ();
