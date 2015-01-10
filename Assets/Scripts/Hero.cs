@@ -40,9 +40,14 @@ public class Hero : MonoBehaviour {
 	}
 
 	void Flip() {
+		Vector3 position = transform.localPosition;
 		Vector3 scale = transform.localScale;
+
 		scale.x *= -1;
 		transform.localScale = scale;
+		position.x = position.x + scale.x * 2.3f;
+		transform.localPosition = position;
+
 		facingRight = (facingRight) ? false : true;
 	}
 
