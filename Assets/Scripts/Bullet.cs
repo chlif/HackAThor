@@ -17,7 +17,7 @@ public class Bullet : MonoBehaviour {
 	//Check for collision events
 	void OnCollisionEnter2D(Collision2D collision){
 		if (collision.gameObject.name == "Zombie") {
-			Destroy( collision.gameObject );
+			collision.gameObject.SendMessage("Die");
 		}
 	}
 }

@@ -3,7 +3,6 @@ using System.Collections;
 
 public class Hero : MonoBehaviour {
 
-	private Animator anim;
 	private bool facingRight = true;
 
 	// Use this for initialization
