@@ -23,14 +23,13 @@ public class Shotgun : MonoBehaviour {
 	}
 
 	void CreateNewBullet() {
-		Rigidbody clone;
+		Rigidbody2D clone;
 		float speed = 5.0f;
 		GameObject ob;
 		ob = Instantiate(bullet, transform.position, transform.rotation) as GameObject;
-		clone = (Rigidbody) ob.GetComponent(typeof(Rigidbody));
-		clone.velocity = transform.TransformDirection ( new Vector3 (4, 0, 0));
-//		clone.AddForce (clone.transform.forward * speed);
+		clone = (Rigidbody2D) ob.GetComponent(typeof(Rigidbody2D));
+		clone.AddForce (clone.transform.forward * speed);
 
-		//Destroy (clone.gameObject, 3);
+		Destroy (clone.gameObject, 3);
 	}
 }

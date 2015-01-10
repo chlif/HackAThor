@@ -7,6 +7,8 @@ Project("{4F7FA2CA-4143-371C-D7D2-786623540AAD}") = "HackAThor", "Assembly-CShar
 EndProject
 Project("{4F7FA2CA-4143-371C-D7D2-786623540AAD}") = "HackAThor", "Assembly-UnityScript-firstpass.unityproj", "{C038F1FC-70F9-1248-A2E2-7D1E8389CFAA}"
 EndProject
+Project("{4F7FA2CA-4143-371C-D7D2-786623540AAD}") = "HackAThor", "Assembly-UnityScript.unityproj", "{88E8D4A4-C235-A631-2F5E-752180DB60B2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,11 +27,15 @@ Global
 		{C038F1FC-70F9-1248-A2E2-7D1E8389CFAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C038F1FC-70F9-1248-A2E2-7D1E8389CFAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C038F1FC-70F9-1248-A2E2-7D1E8389CFAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88E8D4A4-C235-A631-2F5E-752180DB60B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88E8D4A4-C235-A631-2F5E-752180DB60B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88E8D4A4-C235-A631-2F5E-752180DB60B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88E8D4A4-C235-A631-2F5E-752180DB60B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-									GlobalSection(MonoDevelopProperties) = preSolution
+										GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
