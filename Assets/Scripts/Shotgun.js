@@ -1,6 +1,7 @@
 ﻿#pragma strict
 
 var bullet : Rigidbody2D;
+var clip: AudioClip;
 var speed = 10;
 
 function Start () {
@@ -23,6 +24,8 @@ function createNewBullet() {
 	
 	var clone = Instantiate(bullet, bulletStartPoint, transform.rotation);
 	clone.velocity = transform.TransformDirection( Vector3( direction * speed, 0, 0 ) );
-	
+
+	audio.PlayOneShot(clip);
+			
 	Destroy( clone.gameObject, 3);
 }

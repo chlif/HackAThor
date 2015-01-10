@@ -4,6 +4,7 @@ using System.Collections;
 public class Zombie : MonoBehaviour {
 
 	private Animator anim;
+	public AudioClip dieClip;
 
 	// Use this for initialization
 	void Start () {
@@ -18,6 +19,7 @@ public class Zombie : MonoBehaviour {
 	// Start death animation
 	void Die () {
 		anim.SetBool ("death", true);
+		audio.PlayOneShot (dieClip);
 		Destroy (this.gameObject, 0.4f);
 	}
 
