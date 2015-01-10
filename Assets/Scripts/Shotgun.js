@@ -1,7 +1,7 @@
 ﻿#pragma strict
 
 var bullet : Rigidbody2D;
-var speed = 20;
+var speed = 10;
 
 function Start () {
 
@@ -16,10 +16,13 @@ function Update () {
 }
 
 function createNewBullet() {
+	var direction = transform.parent.localScale.x;
 	var bulletStartPoint = transform.position;
-	bulletStartPoint.x = bulletStartPoint.x + transform.localScale.x * 4.5;
+	bulletStartPoint.x = bulletStartPoint.x + direction * 1.5;
 	bulletStartPoint.y = bulletStartPoint.y + 0.2;
+	
 	var clone = Instantiate(bullet, bulletStartPoint, transform.rotation);
-	clone.velocity = transform.TransformDirection( Vector3( speed, 0, 0 ) );
+	clone.velocity = transform.TransformDirection( Vector3( direction * speed, 0, 0 ) );
+	
 	Destroy( clone.gameObject, 3);
 }
